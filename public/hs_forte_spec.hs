@@ -16,9 +16,9 @@ forte_spec xs = length xs >= 6 &&
 -- | propriedade de correção
 prop_correct :: Property
 prop_correct
-  = forAllShrink "str" asciiString shrink $
+  = testing "forte" $ 
+    forAllShrink "str" asciiString shrink $
     \xs -> forte xs ?== forte_spec xs
-           <?> "forte" 
 
 -- gerador de carateres '0' até 'z'
 asciiString = listOf (choose ('0', 'z'))
