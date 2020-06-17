@@ -1,12 +1,11 @@
 <!--
-  Example of an exercise without acceptance tests.
-  Codex is used to receive ad record submissions.
+  Example of an exercise without any acceptance tests.
+  Codex is used only to record submissions.
 -->
 
 ---
 tester: accept
 language: sh
-valid: "until 01/06/2019"
 ...
 
 # Remove *LaTeX* temporary files

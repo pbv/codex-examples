@@ -11,11 +11,10 @@ strong_passwd_wrapper :: String -> CInt
 strong_passwd_wrapper str = runC $ 
   withCString str strong_passwd
 
--- | purely functional specification for 
+-- | purely functional reference solution
 strong_spec :: String -> Bool
 strong_spec xs
-  = length xs >= 6 &&
-    any isUpper xs && any isLower xs &&  any isDigit xs
+  = length xs>=6 && any isUpper xs && any isLower xs &&  any isDigit xs
 
 -- | correctness property
 prop_correct :: Property

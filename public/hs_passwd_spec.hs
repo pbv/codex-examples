@@ -2,25 +2,25 @@
 import Codex.QuickCheck
 import Data.Char
 
--- | submissão do estudante (módulo separado)
-import Submission (forte) 
+-- | student submission (in separate module)
+import Submission (strongPasswd) 
 
 
--- | solução de referência
-forte_spec :: String -> Bool
-forte_spec xs = length xs >= 6 &&
-                any isUpper xs &&
-                any isLower xs &&
-                any isDigit xs
+-- | reference solution
+strong_spec :: String -> Bool
+strong_spec xs =
+  length xs >= 6 && any isUpper xs && any isLower xs && any isDigit xs
 
--- | propriedade de correção
+-- | correctness property
 prop_correct :: Property
 prop_correct
-  = testing "forte" $ 
-    forAllShrink "str" asciiString shrink $
-    \xs -> forte xs ?== forte_spec xs
+  = testing "strongPasswd" $ 
+    forAllShrink "str" genPasswd shrinkPasswd $
+    \xs -> strongPasswd xs ?== strong_spec xs
 
--- gerador de carateres '0' até 'z'
-asciiString = listOf (choose ('0', 'z'))
+-- custom generator and shrinker
+genPasswd = listOf (choose ('0', 'z'))
+shrinkPasswd = shrinkMap (filter (\c -> c >= '0' && c<='z')) id
+
                       
 main = quickCheckMain prop_correct

@@ -1,3 +1,9 @@
+<!-- Example of a multiple-choice and fill-in quiz.
+     Questions and/or answers can be automatically shuffled. 
+ 	 If feedback is enabled students will  see an immediate 
+	 correction and grade after submision.
+-->
+
 ---
 tester: quiz
 shuffle-questions: no
@@ -43,15 +49,14 @@ Which of the following statements is a tautology?
 ## {.question .multiple answer=a answer=c answer=e}
 
 <!-- Allow multiple selections;
- the default scoring is such that:
- * the sum of all correct alternatives   =  1
- * the sum of all incorrect alternatives = -1
+    the default scoring is such that:
+    * the sum of all correct alternatives   =  1
+    * the sum of all incorrect alternatives = -1
  
- E.g. for 5 alternatives with 3 correct options
- each correct answer is worth 1/3 and 
- each incorrect one is worth -1/2
+    E.g. for 5 alternatives with 3 correct options
+    each correct answer is worth 1/3 and 
+    each incorrect one is worth -1/2
 -->
-
 
 Which of the following statements are true?
 Select **all** of true options.

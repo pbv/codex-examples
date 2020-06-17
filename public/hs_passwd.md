@@ -6,6 +6,13 @@ maxSuccess: 1000
 maxSize: 30
 ...
 
+<!-- We increase the number of tests (maxSuccess) and
+	decrease the maximum string length (maxSize) to ensure better
+	coverage for edge cases. We could instead make run fewer tests by
+	programming a custom generator, but for such a simple exercise
+	running 1000 tests is quite fast.  -->
+
+
 # Strong password in Haskell
 
 Define a Haskell function `strongPasswd :: String -> Bool`{.haskell}
