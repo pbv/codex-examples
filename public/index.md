@@ -1,33 +1,33 @@
 
 # Welcome!
 
-This repository  exemplifies diferent exercise types and tester
+This repository exemplifies diferent exercise types and tester
 suported by *Codex*.
 
-## Doctests (Python)
+## Python exercise using Doctests 
 
 * [](imc.md){.ex}
 
-## QuickCheck (Haskell)
+## Haskell exercise using QuickCheck 
 
-* [](hs_forte.md){.ex}
+* [](hs_passwd.md){.ex}
 
-## QuickCheck (C)
+## C exercises using QuickCheck 
 
-* [](c_forte.md){.ex}
+* [](c_passwd.md){.ex}
 
-## Input/Output (many languages)
+## Input/Output tests (many languages)
 
 * [](coprimos.md){.ex}
 
-## Acceptance (no tests)
+## Acceptance only (no tests)
 
 * [](accept.md){.ex}
 
-## Multiple choice quizzes
+## Multiple choice quizz
 
 * [](quiz.md){.ex}
 
 ----
 
-Pedro Vasconcelos, 2018--2019
+Pedro Vasconcelos, 2018--2020

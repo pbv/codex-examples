@@ -38,6 +38,8 @@ Exemplos:
 'obeso'
 ~~~
 
+<!-- esqueleto de código inicial -->
+
 ---
 code: | 
   ~~~

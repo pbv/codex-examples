@@ -1,6 +1,6 @@
 <!-- 
-	Problema original proposto por Sergio Crisóstomo, DCC/FCUP
-	para o concurso de programação ToPAS 2018.
+	Original problem proposed by Sergio Crisóstomo, DCC/FCUP
+	for the ToPAS 2018 programming contest.
 -->
 
 ---
@@ -8,10 +8,7 @@ tester: stdio
 languages: [c, java, python, haskell]
 inputs: [ "coprimos/cop*.in" ]
 outputs: [ "coprimos/cop*.out" ]
-valid: "until 31/12/2019 and attempts 10"
 ...
-
-<!-- Limitar a data de submissão e o número máximo de tentativas -->
 
 # Co-primos mais afastados.
 
