@@ -1,33 +1,64 @@
 
-# Welcome!
+# Codex Examples
 
-This repository exemplifies diferent exercise types and tester
+This repository exemplifies diferent exercise testers
 suported by *Codex*.
 
-## Python exercise using Doctests 
+## doctest
 
-* [](imc.md){.ex}
+Test Python functions using doctests.
 
-## Haskell exercise using QuickCheck 
+* [](bmi.md){.ex}
+* [](roots.md){.ex}
+* [](goldbach.md){.ex}
+* [](sortacle.md){.ex}
+
+## mudoctest
+
+Mutation testing: check student's doctests against instructor-provided
+code.
+
+* [](mutation1.md){.ex}
+* [](mutation2.md){.ex}
+* [](mutation3.md){.ex}
+* [](mutation4.md){.ex}
+* [](mutation5.md){.ex}
+
+## stdio
+
+Check complete programs against input-output file pairs.
+
+* [](coprimes.md){.ex}
+
+## hspec
+
+Tests Haskell and C functions using unit and property-based tests.
 
 * [](hs_passwd.md){.ex}
-
-## C exercises using QuickCheck 
-
 * [](c_passwd.md){.ex}
 
-## Input/Output tests (many languages)
+## sqlite-query
 
-* [](coprimos.md){.ex}
+Exercises on SQL queries using SQLite.  These exercises
+are based on a hypothetical DVD rental database. You can download the
+[SQLite file](sqlite/dvd.sqlite) and the [relational
+model](sqlite/dvd.pdf).
 
-## Acceptance only (no tests)
+* [](dvdstore1.md){.ex}
+* [](dvdstore2.md){.ex}
+
+## accept 
+
+The "null" tester that always accepts submissions.
 
 * [](accept.md){.ex}
 
-## Multiple choice quizz
+## quiz
+
+Multiple choice and fill-in quizzes.
 
 * [](quiz.md){.ex}
 
 ----
 
-Pedro Vasconcelos, 2018--2020
+Pedro Vasconcelos, 2025
